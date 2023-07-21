@@ -1,6 +1,8 @@
 import React from "react";
 
 export default function Carousel({ product }) {
+  const ImagesUrl =
+    "https://res.cloudinary.com/react-de-cero-a-experto/image/upload/v1689902968/buyorama/products/";
   const images = product.images.split(",");
 
   return (
@@ -12,7 +14,7 @@ export default function Carousel({ product }) {
             className={`carousel-item ${index === 0 ? "active" : ""}`}
           >
             <img
-              src={`src/assets/products/${image}`}
+              src={`${ImagesUrl}${image}`}
               className="d-block w-100"
             />
           </div>

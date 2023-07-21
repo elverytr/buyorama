@@ -1,11 +1,14 @@
 {
   "name": "buyorama",
+  "homepage": "https://elverytr.github.io/buyorama",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "serve": "vite preview",
+    "deploy": "vite build && gh-pages -d dist",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -14,6 +17,7 @@
     "@cloudinary/url-gen": "^1.10.2",
     "axios": "^1.4.0",
     "bootstrap": "^5.3.0",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^6.0.4"

@@ -58,7 +58,7 @@ export default function Products() {
   };
 
   useEffect(() => {
-    axios.get("http://127.0.0.1:8000/shop/products").then(({ data }) => {
+    axios.get("https://buyorama-d0bad80c5095.herokuapp.com/shop/products/").then(({ data }) => {
       setProducts(data);
     });
   }, []);
